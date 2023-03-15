@@ -34,10 +34,11 @@ messageEl.addEventListener('input', throttle((event) => {
 btnEl.addEventListener('click', (event) => {
     event.preventDefault();
 
+    console.log(obj);
+
     obj.email = '';
     obj.message = '';
     localStorage.setItem("feedback-form-state", JSON.stringify(obj));
     emailEl.value = '';
     messageEl.value = '';
-    console.log(obj);
 })
