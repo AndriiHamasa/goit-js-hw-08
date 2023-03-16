@@ -38,7 +38,7 @@ btnEl.addEventListener('click', (event) => {
 
     obj.email = '';
     obj.message = '';
-    localStorage.setItem("feedback-form-state", JSON.stringify(obj));
+    localStorage.clear();
     emailEl.value = '';
     messageEl.value = '';
 })
